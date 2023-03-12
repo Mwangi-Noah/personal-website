@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    background: blue;
+    background: grey;
 }
 #introduction {
-    width: 265px;
-    height: 165px;
-    background: rgb(35, 2, 19);
-    margin-left: 163px;
-    padding-top: 25px;
-}
+    float: left;
+    width: 40%;
+    padding: 10px;
+   
