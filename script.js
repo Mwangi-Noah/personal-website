@@ -1,3 +1,4 @@
-const h2 = document.createElement("h2");
-h2.textContent = "Hello World!";
-document.querySelector("body").appendChild(h2);
+function myFunction() {
+    var username = document.getElementById("name");
+    var email = document.getElementById("email");
+    var message = document.getElementById("message");
