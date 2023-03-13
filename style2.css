@@ -42,7 +42,15 @@ h2 {
 }
   
 .intColumn {
-    display: flex;
-    flex: 30%;
-    padding: 5px;
+    display: block;
+    padding: 50px;
+    margin: auto;
+    word-wrap: break-word;
   }
+.intColumn2 {
+    display: block;
+    padding: 50px;
+    margin: auto;
+    box-sizing: border-box;
+      
+}
