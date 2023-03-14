@@ -1,74 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head> 
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Trial Site</title>
-  </head>
-  <body>
-    <div class="container">
+<html lang="en-UK"><head><meta charset="utf-8"></head><head><title>Personal Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <img id="myPic" src="images/me2_three.png" alt="Personal Photo">
+    </div>
+    <div class="bio">
+      <h3>Hello</h3>
+      <h2>I am Noah Mwangi</h2>
+      <h3>A software Engineering Student from Moringa</h3> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+    <h2>About Me</h2>
+    <p>I am currently a student of Moringa School, one of the country's top Computer Engineering Schools. I am currently studying software engineering, leaning towards front-end and back-end software development. By the conclusion of this course, I will be well versed in several programming languages and frameworks including Ruby, Python, Javascript, React, and vue.js.</p>
+    </div>
+  </div>
+  <h2>Competencies and Services</h2>
+  <div class="row">
+    <div class="intColumn">
+      <img src="icons/webIcon.png" alt="Web Icon">
+      <h3>Web Design</h3>
+      <p>One of the major programs we learn at Moringa is web design. Using HTML, CSS, Javascript, ruby, python and several database management systems, I am set to acquire skills that will enable me to create unique, responsive websites that will meet all of the client's needs</p>
+    </div>
+    <div class="intColumn">
+      <img src="icons/frontend.jpg" alt="front end">
+      <h3>Front-End Development</h3>
+      <p>A basic skill taught in Moringa is on the creation of websites and web application. We acquire skills that endow us with the ability to create sites in which visitors can easily interact with and meet their needs.</p>
+    </div>
+    <div class="intColumn">
+      <img src="icons/backend.png" alt="">
+      <h3>Back-End Development</h3>
+      <p>Another major skill that we are set to acquire is on building and maintaining the requisite framework that process data and push a website to perform a given action.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h2>Let's come together to make your next project a success</h2>
+      <p>Click on the contact button and insert your contact details and a short description of what you require. Thank You</p>
+    </div>
+  </div> 
+  <div class = "buttonBack">
+    <button id="myBtn">Contact Me</button>
+  </div>
+    
+
+
+
+<div id="myModal" class="modal">
+
   
-         <div class="row">
-            <div class="column">
-                <h2>Column 1</h2>
-                <img id="myPic" src="images/me2_three.png" alt="Personal Photo">
-                <p>Some text..</p>
-            </div>
-            <div class="bio">
-                <h3>Hello</h3>
-                <h2>I am Noah Mwangi, A software Engineering Student from Moringa</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column2">
-                <h2>About Me</h2>
-                <p>
-                    I am currently a student of Moringa School, one of the country's top Computer Engineering Schools. I am currently studying software engineering, leaning towards front-end and back-end software development. By the conclusion of this course, I will be well versed in several programming languages and frameworks including Ruby, Python, Javascript, React, and vue.js.
-                </p>
-            </div>
-        </div>
-        <h2>Competencies and Services</h2>
-        <div class="row">
-            
-                <div class="intColumn">
-                    <img src="icons/webIcon.png" alt="Web Icon">
-                    <h3>Web Design</h3>
-                    <p>One of the major programs we learn at Moringa is web design. Using HTML, CSS, Javascript, ruby, python and several database management systems, I am set to acquire skills that will enable me to create unique, responsive websites that will meet all of the client's needs</p>
-                </div>
-                <div class="intColumn">
-                    <img src="icons/frontend.jpg" alt="front end">
-                    <h3>Front-End Development</h3>
-                    <p>A basic skill taught in Moringa is on the creation of websites and web application. We acquire skills that endow us with the ability to create sites in which visitors can easily interact with and meet their needs.</p>
-                </div>
-                <div class="intColumn">
-                    <img src="icons/backend.png" alt="">
-                    <h3>Back-End Development</h3>
-                    <p>Another major skill that we are set to acquire is on building and maintaining the requisite framework that process data and push a website to perform a given action. </p>
-                </div>
-                 
-        </div>
-                
-        <div class="row">
-            <div class="intColumn2">
-                <h2>Let's come together to make your next project a success</h2>
-                <p>Click on the contact button and insert your contact details and a short description of what you require. Thank You</p>
-            </div>
-            <div class="intColumn2">
-                <button class="contactButton" onclick="showForm()">Contact</button>
-                <div class="contactForm" id=""myForm">
-                    <form action="" method="get" class="contactBook">
-                        <h1>Contact Me</h1>
-                        <label for="name"><b>Name</b></label> 
-                        <input type="text" name="name" id="name" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="decription"><b>Reason for Contact</b></label> 
-                        <input type="text" name="reason">
-                        <button type="submit" class="send">Send</button>
-                        <button type="button" class="cancel" onclick="closeForm()">Close</button>
-                        </form>
-                </div>
-            </div>
-        </div>     
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="contactContainer">
+      <form action="#">
         
-    </div>  
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        
+        <input type="email" id="mail" name="mail" placeholder="Your email adress..">
+
+        <textarea id="subject" name="subject" placeholder="Reason for contact"></textarea>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
